@@ -1,0 +1,2 @@
+atf_nav_test
+-DCATKIN_DEVEL_PREFIX=/home/flg-ma/git/nav_tests/devel -DCMAKE_INSTALL_PREFIX=/home/flg-ma/git/nav_tests/install -G Unix Makefiles

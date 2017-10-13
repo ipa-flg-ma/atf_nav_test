@@ -1,0 +1,17 @@
+#  goal:
+#    - topic: /move_base/goal
+#      groundtruth: 0.0
+#      groundtruth_epsilon: 0.2
+#
+##      groundtruth_angle_epsilon: 20.0 # [degree]
+##      groundtruth_angle: 0.0 # [degree]
+#  jerk:
+#    - topic: /base/odometry_controller/odometry
+#      groundtruth: 0.0
+#      groundtruth_epsilon: 4.0
+#
+#
+#  publish_rate:
+#    - topic: /base/odometry_controller/odometry
+#      groundtruth: 33
+#      groundtruth_epsilon: 5

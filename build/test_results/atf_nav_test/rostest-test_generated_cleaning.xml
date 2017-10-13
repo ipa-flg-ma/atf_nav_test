@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="1" time="2.921">
+  <testcase classname="rostest.runner.RosTest" name="testcleaning" time="2.9213"></testcase>
+  <system-out><![CDATA[[ROSTEST]setup[/home/flg-ma/git/nav_tests/build/atf_nav_test/test_generated/cleaning.test] run_id[6a94d38a-b004-11e7-8f59-782bcbad4e67] starting
+?[1mstarted roslaunch server http://cob-stud-5:41965/?[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /atf/bag_output: /tmp/atf_nav_test...
+ * /atf/json_output: /tmp/atf_nav_test...
+ * /atf/yaml_output: /tmp/atf_nav_test...
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+[ROSTEST]setup[/home/flg-ma/git/nav_tests/build/atf_nav_test/test_generated/cleaning.test] run_id[6a94d38a-b004-11e7-8f59-782bcbad4e67] done
+[ROSTEST]Running test [cleaning]
+?[1mROS_MASTER_URI=http://cob-stud-5:46232/?[0m
+?[1msetting /run_id to 6a94d38a-b004-11e7-8f59-782bcbad4e67?[0m
+?[1mprocess[rosout-1]: started with pid [26364]?[0m
+started core service [/rosout]
+[ROSTEST]running test cleaning
+?[1mprocess[cleaning-2]: started with pid [26443]?[0m
+?[1m[cleaning-2] process has finished cleanly
+log file: /home/flg-ma/.ros/log/6a94d38a-b004-11e7-8f59-782bcbad4e67/cleaning-2*.log?[0m
+[ROSTEST]test [cleaning] finished
+[ROSTEST]test [cleaning] results are in [/home/flg-ma/git/nav_tests/build/test_results/atf_nav_test/rosunit-cleaning.xml]
+[ROSTEST]test [cleaning] results summary: 0 errors, 0 failures, 1 tests
+[ROSTEST][ROSTEST] test [cleaning] done
+[ROSTEST]tearDown[/home/flg-ma/git/nav_tests/build/atf_nav_test/test_generated/cleaning.test]
+shutting down processing monitor...
+[rosout-1] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /home/flg-ma/git/nav_tests/build/atf_nav_test/test_generated/cleaning.test complete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

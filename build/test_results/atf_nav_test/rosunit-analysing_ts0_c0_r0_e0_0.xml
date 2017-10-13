@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="1" name="unittest.suite.TestSuite" tests="1" time="6.304">
+  <testcase classname="__main__.TestAnalysing" name="test_Analysing" time="6.3041">
+    <failure type="AssertionError">groundtruth missmatch for: testblock_nav(path_length: data=8.622, groundtruth=6.5+-0.3 details:{'root_frame': '/map', 'measured_frame': '/base_link'}); testblock_nav(time: data=25.44, groundtruth=20.0+-1.0 details:None); 
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/home/flg-ma/git/atf/src/atf/atf_core/scripts/analyser.py", line 178, in test_Analysing
+    self.assertTrue(groundtruth_result, groundtruth_error_message)
+  File "/usr/lib/python2.7/unittest/case.py", line 424, in assertTrue
+    raise self.failureException(msg)
+    </failure>
+  </testcase>
+  <system-out><![CDATA[[INFO] [WallTime: 1507892034.552837] ATF analyser: started!
+[INFO] [WallTime: 1507892037.962546] Starting testblock 'testblock_nav'
+[INFO] [WallTime: 1507892037.963278] ?[91m----calc_jerk.py----?[0m
+[INFO] [WallTime: 1507892037.963843] ?[91m----time.py----?[0m
+[INFO] [WallTime: 1507892038.276069] ?[91m----callback goal----?[0m
+[INFO] [WallTime: 1507892038.277100] ?[1mGoal X: 5.0	[m]?[0m
+[INFO] [WallTime: 1507892038.277754] ?[1mGoal Y: -5.0	[m]?[0m
+[INFO] [WallTime: 1507892040.506509] Stopping testblock 'testblock_nav'
+[INFO] [WallTime: 1507892040.557624] ?[92mDistance:			0.234236486036 [m]?[0m
+[INFO] [WallTime: 1507892040.559016] ?[92mAngle:				1.07077832415 [degree]?[0m
+[INFO] [WallTime: 1507892040.560037] ?[92mGroundtruth Position:		0.0 [m]	Type: <type 'float'>?[0m
+[INFO] [WallTime: 1507892040.560954] ?[92mGroundtruth Position Epsilon:	0.3 [m]	Type: <type 'float'>?[0m
+?[94mGot this array:  (1182, 8) ?[0m
+?[92mJerk is in desired range!?[0m
+Max Jerk: 3.1588 [m/s^3]
+]]></system-out>
+  <system-err><![CDATA[[WARN] [WallTime: 1507892038.044224] canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.
+[WARN] [WallTime: 1507892038.095365] canTransform: target_frame map does not exist. canTransform: source_frame base_link does not exist.
+[WARN] [WallTime: 1507892038.146539] Lookup would require extrapolation into the past.  Requested time 15.963000000 but the earliest data is at time 16.409000000, when looking up transform from frame [base_link] to frame [map]
+]]></system-err>
+</testsuite>
