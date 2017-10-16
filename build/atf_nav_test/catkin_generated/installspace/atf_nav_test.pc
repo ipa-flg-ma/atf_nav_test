@@ -1,8 +1,0 @@
-prefix=/home/flg-ma/git/nav_tests/install
-
-Name: atf_nav_test
-Description: Description of atf_nav_test
-Version: 0.1.0
-Cflags: 
-Libs: -L/home/flg-ma/git/nav_tests/install/lib 
-Requires: rospy

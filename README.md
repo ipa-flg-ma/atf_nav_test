@@ -1,4 +1,4 @@
-# Navigation Test
-Simulation for navigation tests at IPA Fraunhofer.
+# ATF Navigation Simulation
+Simulation for navigation tests at IPA Fraunhofer with dynamic reconfigure.
 
-Config files for the simulation using [ATF](https://github.com/ipa-fmw/atf).
+This directory includes the config files for the simulation testcase using [ATF](https://github.com/ipa-fmw/atf).
