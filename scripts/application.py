@@ -21,17 +21,20 @@ class Application:
         self.pub = rospy.Publisher('/gazebo/set_model_state', ModelState, queue_size=1)  # gazebo move object publisher
         self.name = 'box1'  # name of object to spawn
 
-        self.testcases = ['line_passage',
-                          'line_passage_obstacle',
-                          'line_passage_person_moving',
-                          'line_passage_spawn_obstacle',
-                          'narrow_passage_2_cone',
-                          't_passage',
-                          't_passage_obstacle']
+        self.testcases = ['line_passage',  # 0
+                          'line_passage_obstacle',  # 1
+                          'line_passage_person_moving',  # 2
+                          'line_passage_spawn_obstacle',  # 3
+                          'narrow_passage_2_cone',  # 4
+                          't_passage',  # 5
+                          't_passage_obstacle']  # 6
         self.rospack = rospkg.RosPack()  # get path for ROS package
         rp = RvizPublisher()
         # filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.args.launch + '.launch'
-        filepath = self.rospack.get_path('msh_bringup') + '/launch/' + sys.argv[2] + '.launch'
+        if "standalone" == sys.argv[1]:
+            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + sys.argv[2] + '.launch'
+        else:
+            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.testcases[3] + '.launch'
         print '=' * len(filepath)
         print filepath
         print '=' * len(filepath)
@@ -92,6 +95,10 @@ class Application:
         elif sys.argv[2] == 't_passage':
             rospy.loginfo('\033[92m' + 't passage goal' + '\033[0m')
             sss.move("base", [5.0, -5.0, -3.14159265358979 / 2])
+
+        # catkin_make will use this line!
+        else:
+            sss.move("base", [7.0, 0.0, 0.0])
 
         # rp.main(filepath, False, True, 2.0, 0.0, 0, 0, 0)
 
