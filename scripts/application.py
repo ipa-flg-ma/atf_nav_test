@@ -55,6 +55,7 @@ class Application:
         # TODO send navigation goal and wait for goal reached
         # ipa-apartment:
         if sys.argv[2] == 'ipa-apartment':
+            rospy.loginfo('\033[92m' + 'ipa-apartment goal' + '\033[0m')
             sss.move("base", [3, 0, 0])
             sss.move("base", [3, -3, -3.14159265358979 / 2])
             sss.move("base", [0, -3, 3.14159265358979])
@@ -62,26 +63,34 @@ class Application:
 
         # saturn-ingolstadt:
         elif sys.argv[2] == 'saturn-ingolstadt':
+            rospy.loginfo('\033[92m' + 'saturn ingolstadt goal' + '\033[0m')
             sss.move("base", [-13.577, 12.629, -1.544])
             sss.move("base", [-0.1, 6.3, -0.0])
 
         # line_passage
         elif sys.argv[2] == 'line_passage':
+            rospy.loginfo('\033[92m' + 'line passage goal' + '\033[0m')
             sss.move("base", [7.0, 0.0, 0.0])
         elif sys.argv[2] == 'line_passage_obstacle':
+            rospy.loginfo('\033[92m' + 'line passage obstacle goal' + '\033[0m')
             sss.move("base", [7.0, 0.0, 0.0])
         elif sys.argv[2] == 'line_passage_person_moving':
+            rospy.loginfo('\033[92m' + 'line passage person moving goal' + '\033[0m')
             sss.move("base", [7.0, 0.0, 0.0])
         elif sys.argv[2] == 'line_passage_spawn_obstacle':
+            rospy.loginfo('\033[92m' + 'line passage spawn obstacle goal' + '\033[0m')
             sss.move("base", [7.0, 0.0, 0.0])
         # narrow_passage_2_cone
         elif sys.argv[2] == 'narrow_passage_2_cone':
+            rospy.loginfo('\033[92m' + 'narrow passage 2 cone goal' + '\033[0m')
             sss.move("base", [10.0, 0.0, 0.0])
         # t_passage_obstacle
         elif sys.argv[2] == 't_passage_obstacle':
+            rospy.loginfo('\033[92m' + 't passage obstacle goal' + '\033[0m')
             sss.move("base", [5.0, -5.0, -3.14159265358979 / 2])
         # t_passage
         elif sys.argv[2] == 't_passage':
+            rospy.loginfo('\033[92m' + 't passage goal' + '\033[0m')
             sss.move("base", [5.0, -5.0, -3.14159265358979 / 2])
 
         # rp.main(filepath, False, True, 2.0, 0.0, 0, 0, 0)
@@ -91,7 +100,16 @@ class Application:
         self.atf.shutdown()
 
     def beam_object(self, x, y, roll, pitch, yaw):
-        # gazebo takes msg as ModelState
+        '''
+        beams an available object to the desired position
+        :param x: x-Position in [m]
+        :param y: y-Position in [m]
+        :param roll: Euler angle transformation
+        :param pitch: Euler angle transformation
+        :param yaw: Euler angle transformation
+        :return: --
+        '''
+        # gazebo takes ModelState as msg type
         model_state = ModelState()
         model_state.model_name = self.name
         model_state.reference_frame = 'world'
