@@ -1,4 +1,9 @@
 # Packages for ATF Navigation Tests
+[![GitHub commit activity the past week, 4 weeks, yea](https://img.shields.io/github/commit-activity/4w/ipa-flg-ma/atf_nav_pkgs.svg)](https://github.com/ipa-flg-ma/atf_nav_pkgs)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ipa-flg-ma/atf_nav_pkgs.svg)](https://github.com/ipa-flg-ma/atf_nav_pkgs)
+
+This repository contains the packages to perform the automated navigation tests using [ATF](https://github.com/ipa-fmw/atf), including the `launch` files, the `application.py` which sets the navigation goal and the min/max allowed values for the test metrics in the `test1.yaml`.
+
 ## Installation
 Dependencies:
 
