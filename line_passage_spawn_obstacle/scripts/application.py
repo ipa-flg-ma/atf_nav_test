@@ -43,7 +43,7 @@ class Application:
         rospy.sleep(1)
 
         # setup threading daemon to beam object in front of robot
-        self.beam_daemon = threading.Timer(15, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
+        self.beam_daemon = threading.Timer(19, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
         self.beam_daemon.setDaemon(True)
         self.beam_daemon.setName('beam_daemon')
 
@@ -53,7 +53,7 @@ class Application:
         self.atf.start('testblock_nav')
         self.beam_daemon.start()
         # necessary to catch goal published on topic /move_base/goal
-        rospy.sleep(3)
+        rospy.sleep(5)
         # line passage spawn obstacle goal
         sss.move("base", [7.0, 0.0, 0.0])
         self.atf.stop('testblock_nav')

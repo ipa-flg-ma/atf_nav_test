@@ -44,7 +44,7 @@ class Application:
     def execute(self):
         self.atf.start('testblock_nav')
         # necessary to catch goal published on topic /move_base/goal
-        rospy.sleep(3)
+        rospy.sleep(5)
         # narrow passage 2 cone goal
         sss.move("base", [10.0, 0.0, 0.0])
         self.atf.stop('testblock_nav')
