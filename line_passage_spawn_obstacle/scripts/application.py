@@ -31,10 +31,7 @@ class Application:
         self.rospack = rospkg.RosPack()  # get path for ROS package
         rp = RvizPublisher()
         # filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.args.launch + '.launch'
-        if "standalone" == sys.argv[1]:
-            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + sys.argv[2] + '.launch'
-        else:
-            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.testcases[3] + '.launch'
+        filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.testcases[3] + '.launch'
         print '=' * len(filepath)
         print filepath
         print '=' * len(filepath)
