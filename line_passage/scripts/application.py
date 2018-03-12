@@ -30,8 +30,13 @@ class Application:
                           't_passage_obstacle']  # 6
         self.rospack = rospkg.RosPack()  # get path for ROS package
         rp = RvizPublisher()
-        # filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.args.launch + '.launch'
-        filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.testcases[0] + '.launch'
+        
+        # filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + self.args.launch + '.launch'
+        if "standalone" == sys.argv[1]:
+            filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + sys.argv[2] + '.launch'
+        else:
+            filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + self.testcases[0] + '.launch'
+            
         print '=' * len(filepath)
         print filepath
         print '=' * len(filepath)
