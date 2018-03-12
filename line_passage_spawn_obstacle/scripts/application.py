@@ -30,11 +30,11 @@ class Application:
                           't_passage_obstacle']  # 6
         self.rospack = rospkg.RosPack()  # get path for ROS package
         rp = RvizPublisher()
-        # filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.args.launch + '.launch'
+        # filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + self.args.launch + '.launch'
         if "standalone" == sys.argv[1]:
-            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + sys.argv[2] + '.launch'
+            filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + sys.argv[2] + '.launch'
         else:
-            filepath = self.rospack.get_path('msh_bringup') + '/launch/' + self.testcases[3] + '.launch'
+            filepath = self.rospack.get_path('ipa_test_bringup') + '/launch/' + self.testcases[3] + '.launch'
         print '=' * len(filepath)
         print filepath
         print '=' * len(filepath)
@@ -43,7 +43,7 @@ class Application:
         rospy.sleep(1)
 
         # setup threading daemon to beam object in front of robot
-        self.beam_daemon = threading.Timer(15, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
+        self.beam_daemon = threading.Timer(7, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
         self.beam_daemon.setDaemon(True)
         self.beam_daemon.setName('beam_daemon')
 
