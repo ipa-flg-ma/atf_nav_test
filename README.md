@@ -29,7 +29,7 @@ $ catkin_make
 
 
 ## Usage
-Use `catkin_make $PKG_NAME$` to start one of the following packages, where `$PKG_NAME$` is one from the list:
+Use `catkin_make atf_$PKG_NAME$` to start one of the following packages, where `$PKG_NAME$` is one from the list:
 
 - line_passage
 - line_passage_obstacle
