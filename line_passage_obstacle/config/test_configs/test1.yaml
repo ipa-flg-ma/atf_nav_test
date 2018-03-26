@@ -12,7 +12,7 @@ testblock_nav:
       groundtruth_epsilon: 4.0
   path_length:
     - root_frame: /map
-      measured_frame: /base_link
+      measured_frame: /base_footprint
       groundtruth: 6.0
       groundtruth_epsilon: 0.3
 #      groundtruth_angle_epsilon: 20.0 # [degree]
