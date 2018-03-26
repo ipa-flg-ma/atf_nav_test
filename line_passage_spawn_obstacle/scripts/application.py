@@ -43,7 +43,7 @@ class Application:
         rospy.sleep(1)
 
         # setup threading daemon to beam object in front of robot
-        self.beam_daemon = threading.Timer(7, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
+        self.beam_daemon = threading.Timer(6, self.beam_object, [5.0, -0.5, 0.0, 0.0, 0.0])
         self.beam_daemon.setDaemon(True)
         self.beam_daemon.setName('beam_daemon')
 

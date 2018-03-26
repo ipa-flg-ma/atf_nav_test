@@ -55,7 +55,7 @@ class Application:
         # necessary to catch goal published on topic /move_base/goal
         rospy.sleep(3)
         # line passage person moving goal
-        sss.move("base", [7.0, 0.0, 0.0])
+        sss.move("base", [8.0, 0.0, 0.0])
         self.atf.stop('testblock_nav')
         self.atf.shutdown()
 
