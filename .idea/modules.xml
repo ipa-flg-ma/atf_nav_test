@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/nav_tests.iml" filepath="$PROJECT_DIR$/.idea/nav_tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/atf_nav_pkgs.iml" filepath="$PROJECT_DIR$/.idea/atf_nav_pkgs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../atf_nav_test_config/.idea/atf_nav_test_config.iml" filepath="$PROJECT_DIR$/../../../atf_nav_test_config/.idea/atf_nav_test_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ipa_navigation_tests/.idea/ipa_navigation_tests.iml" filepath="$PROJECT_DIR$/../ipa_navigation_tests/.idea/ipa_navigation_tests.iml" />
     </modules>
   </component>
 </project>

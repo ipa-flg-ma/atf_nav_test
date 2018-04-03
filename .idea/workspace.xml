@@ -1,17 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="c57698f3-1d0f-4a8b-8930-b5f4e91ce3af" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/nav_tests.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/preferred-vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_bringup/launch/application.xml" afterPath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_bringup/launch/application.xml" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_obstacle/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_person_moving/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/line_passage_spawn_obstacle/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/narrow_passage_2_cone/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/categories.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/command_gui_buttons.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/offers.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/planogram.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/planogram_corrected.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/sm_settings.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/statemachine/offers.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/statemachine/tts_monologs.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/statemachine/tts_sentences.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../ipa_navigation_tests/ipa_test_env_config/envs/t_passage_obstacle/static_contacts.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../../atf_nav_test_config/.idea/atf_nav_test_config.iml" afterPath="$PROJECT_DIR$/../../../atf_nav_test_config/.idea/atf_nav_test_config.iml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="bcolors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/bcolors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#297#306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compare.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="274" column="34" lean-forward="true" selection-start-line="274" selection-start-column="34" selection-end-line="274" selection-end-column="34" />
+              <folding>
+                <element signature="e#317#328#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dir_util</find>
+      <find>args.start</find>
+      <find>self.args.coun</find>
+      <find>pc_count</find>
+      <find>'\033[94m'</find>
+      <find>'\033[0m'</find>
+      <find>'\033[92m'</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/bcolors.py" />
+        <option value="$PROJECT_DIR$/../../../atf_nav_test_config/scripts/start_testcases.py" />
+        <option value="$PROJECT_DIR$/scripts/start.py" />
+        <option value="$PROJECT_DIR$/scripts/compare.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="atf_nav_pkgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atf_nav_pkgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atf_nav_pkgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atf_nav_pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atf_nav_pkgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipa_navigation_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atf_nav_pkgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atf_nav_test_config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="atf_nav_pkgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atf_nav_test_config" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../atf_nav_test_config" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="project&#9;ACTION&#9;CloseProject&#10;manage&#9;ACTION&#9;ManageRecentProjects" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="atf_nav_pkgs" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.compare" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="c57698f3-1d0f-4a8b-8930-b5f4e91ce3af" name="Default" comment="" />
       <created>1501071621902</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -19,11 +279,128 @@
     </task>
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2183406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19650654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="78">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../atf_nav_test_config/scripts/compare_config_parameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../atf_nav_test_config/scripts/set_time_true.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/bcolors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#297#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../atf_nav_test_config/scripts/start_testcases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3328">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#703#712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../atf_nav_test_config/scripts/compare_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1820">
+          <caret line="135" column="46" lean-forward="true" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="274" column="34" lean-forward="true" selection-start-line="274" selection-start-column="34" selection-end-line="274" selection-end-column="34" />
+          <folding>
+            <element signature="e#317#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
