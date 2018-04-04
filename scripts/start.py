@@ -115,7 +115,7 @@ class StartTestcases:
                 print '=' * 80
 
         endtime = time.time()
-        timestring = tc.WARNING + 'Time needed: {:4.3} [min]' + tc.ENDC
+        timestring = tc.WARNING + 'Time needed: {:10.3} [min]' + tc.ENDC
         print timestring.format((endtime - starttime) / 60)
         print '=' * 80
 
