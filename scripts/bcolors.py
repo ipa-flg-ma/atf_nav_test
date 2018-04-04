@@ -3,12 +3,12 @@
 """
 Created on Aug 10, 2017
 @author: flg-ma
-@attention: Jerk Metric
+@attention: terminal colors
 @contact: albus.marcel@gmail.com (Marcel Albus)
 @version: 1.0
 """
 
-# colors in terminal prints
+# colors in terminal outputs
 class TerminalColors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
