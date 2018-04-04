@@ -1,6 +1,6 @@
 testblock_nav:
   time:
-    - groundtruth: 17.5
+    - groundtruth: 14.3
       groundtruth_epsilon: 1.0
   goal:
     - topic: /move_base/goal
@@ -13,7 +13,7 @@ testblock_nav:
   path_length:
     - root_frame: /map
       measured_frame: /base_footprint
-      groundtruth: 6.0
+      groundtruth: 6.3
       groundtruth_epsilon: 0.3
 #      groundtruth_angle_epsilon: 20.0 # [degree]
 #      groundtruth_angle: 0.0 # [degree]
