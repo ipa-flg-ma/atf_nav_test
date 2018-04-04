@@ -18,12 +18,8 @@ History:
 import yaml
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import os
-from matplotlib.patches import Rectangle
-from matplotlib.offsetbox import AnchoredOffsetbox, TextArea, DrawingArea, HPacker
 from bcolors import TerminalColors as tc
 import getpass
 
@@ -64,7 +60,6 @@ class CompareResults:
                         'goal',
                         'jerk',
                         'time']
-
 
     def read_yaml(self):
         '''
@@ -128,13 +123,12 @@ class CompareResults:
                 counter += 1
                 #
                 if counter % 20 == 0:
-                    print 'Directories saved: ' + str(counter) + ' / ' + str(self.directories.__len__())
+                    print '\r' + 'Directories saved: ' + str(counter) + ' / ' + str(self.directories.__len__()),
 
         self.dataframe = df.copy()  # save dataframe globally
         self.dataframe.to_csv(self.pth + 'Dataframe.csv', index=False)
         print 'save \'dataframe\' as \'csv\''
         print '=' * 100
-        # df = df.pivot(index='testcase', columns='test_number', values='bool')  # create the desired table output
 
         formatted_testcases = ['Line Passage',
                                'Line Passage Obstacle',
@@ -143,109 +137,9 @@ class CompareResults:
                                'Narrow Passage Two Cone',
                                'T Passage',
                                'T Passage Obstacle']
-
-        # i = 0
-        # for cases in self.testcases:  # rename the row indices to nice, formatted names
-        #     df = df.rename(index={cases: formatted_testcases[i]})
-        #     i += 1
         print df.head(10)  # print the first 'n' numbers of the table
         print '=' * 100
         return df  # returns the dataframe
-
-    def plot_heatmap(self, dataframe_list):
-        '''
-        creates a seaborn heatmap with the provided dataframe
-        :param dataframe_list: a list with pandas dataframe including the heatmap data
-        :return: -
-        '''
-        # fig = plt.figure(1, figsize=(self.directories.__len__() / 20.0, self.directories.__len__() / 90.0)) # stupid
-        # fig = plt.figure(1, figsize=(dataframe.columns.__len__() / 3.0, dataframe.columns.__len__() / 7.0)) # more line output
-
-        for n in xrange(1, dataframe_list.__len__()):
-            x_width = (dataframe_list[n].columns.__len__() / 3.0) if (dataframe_list[
-                                                                          n].columns.__len__() / 3.0) > 7.0 else 7.0
-            y_height = (dataframe_list[n].columns.__len__() / 7.0) if (dataframe_list[
-                                                                           n].columns.__len__() / 7.0) > 3.0 else 3.0
-            fig = plt.figure(n, figsize=(x_width, y_height))
-            # fig = plt.figure(1, figsize=(7.0, 3.0)) # one line output
-            # fig = plt.figure(1, figsize=(200.0, 50.0))
-
-            # setup seaborn for grey output as np.NaN values and no lines indicating the row and columns
-            sns.set()  # setup seaborn
-
-            # create heatmap
-            ax = sns.heatmap(dataframe_list[n], linewidths=.3, cbar=False,
-                             cmap=mpl.colors.ListedColormap(['red', 'yellow', 'green']), square=True, annot=False,
-                             vmax=1.0,
-                             vmin=0.0)
-            plt.xticks(rotation=90)
-            # bugfix for the 'bbox_inches=tight' layout, otherwise the label will be cut away
-            plt.title('$\quad$', fontsize=60)
-            # plt.title('$\quad$', fontsize=35)
-            plt.xlabel('Testcase number', fontsize=15)
-            plt.ylabel('Testcase', fontsize=15)
-            self.plot_rectangle(figure=fig, axis=ax)
-            plt.savefig(self.pth + 'Heatmap_Threshold_' + str(n) + '.pdf', bbox_inches='tight')
-            fig.clf()
-            sns.reset_orig()
-            # plt.show()  # show heatmap
-
-    def drop_threshold(self, dataframe_bool):
-        '''
-        drops the columns when the number of 'True'-bool parameters (given as float) are below the threshold
-        the dataframe contains only the bool values (stored as float)
-        :param dataframe_bool: dataframe to drop column
-        :return: dataframe list with all the dataframes including less columns
-        '''
-        dataframe_list = []
-        for threshold in xrange(0, 8):
-            df = pd.DataFrame.copy(dataframe_bool)
-            counter = 0
-            # bool values in dataframe are stored as float
-            for column in df:  # go through each column
-                for value in df[column]:  # get values in each column
-                    counter += value  # add all values
-                if counter < threshold:  # compare with threshold
-                    df = df.drop([column], axis=1)  # drop if below threshold
-                counter = 0  # reset counter
-            dataframe_list.append(df)
-        return dataframe_list
-
-    def plot_rectangle(self, figure, axis):
-        '''
-        plots the legend rectangle above the left corner of the figure
-        :param figure: figure on which to add the label
-        :param axis: axis on which to add the label
-        :return: -
-        '''
-
-        box1 = TextArea(" True: \n False: \n NaN: ", textprops=dict(color="k", size=10))
-
-        # box2 = DrawingArea(20, 27.5, 0, 0)
-        # el1 = Rectangle((5, 15), width=10, height=10, angle=0, fc="g")
-        # el2 = Rectangle((5, 2.5), width=10, height=10, angle=0, fc="r")
-        box2 = DrawingArea(20, 45, 0, 0)
-        el1 = Rectangle((5, 30), width=10, height=10, angle=0, fc="g")
-        el2 = Rectangle((5, 18.5), width=10, height=10, angle=0, fc="r")
-        el3 = Rectangle((5, 7), width=10, height=10, angle=0, fc='#d3d3d3')
-        box2.add_artist(el1)
-        box2.add_artist(el2)
-        box2.add_artist(el3)
-
-        box = HPacker(children=[box1, box2],
-                      align="center",
-                      pad=0, sep=5)
-
-        anchored_box = AnchoredOffsetbox(loc=3,
-                                         child=box, pad=0.,
-                                         frameon=True,
-                                         bbox_to_anchor=(0., 1.02),
-                                         bbox_transform=axis.transAxes,
-                                         borderpad=0.,
-                                         )
-
-        axis.add_artist(anchored_box)
-        figure.subplots_adjust(top=0.8)
 
     def plot_error_bar(self):
 
@@ -270,6 +164,16 @@ class CompareResults:
         print tc.OKBLUE + 'standard deviation' + tc.ENDC
         print error
 
+        # write average and standard deviation to file
+        with open(self.pth + 'Average.txt', 'w') as file:
+            file.write('average values\n')
+            file.write(means.__str__() + '\n')
+            file.write('=' * 100 + '\n')  # add lines for readability
+            file.write('=' * 100 + '\n')  # add lines for readability
+            file.write('standard deviation\n')
+            file.write(error.__str__() + '\n')
+            file.close()
+
         scale_factor = 1.2
         fig = plt.figure(222, figsize=(13.8 * scale_factor, 12.6 * 2.2))
         ax1 = fig.add_subplot(411)
@@ -284,9 +188,8 @@ class CompareResults:
 
     def main(self):
         self.read_yaml()
-        # self.plot_heatmap(self.drop_threshold(dataframe_bool=self.read_yaml()))
         self.plot_error_bar()
-        # print tc.OKGREEN + '=' * 41 + ' Created Heatmap ' + '=' * 41 + tc.ENDC
+        print tc.OKGREEN + '=' * 41 + ' Generated Errorbarplot ' + '=' * 41 + tc.ENDC
 
 
 if __name__ == '__main__':
