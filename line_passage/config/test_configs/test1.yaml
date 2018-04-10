@@ -12,9 +12,16 @@ testblock_nav:
       groundtruth_epsilon: 4.0
   path_length:
     - root_frame: /map
-      #measured_frame: /base_link
       measured_frame: /base_footprint
       groundtruth: 5.5
       groundtruth_epsilon: 0.3
+#  publish_rate: 
+#    - topic: /clock
+#      groundtruth: 20.0
+#      groundtruth_epsilon: 4.0
 #      groundtruth_angle_epsilon: 20.0 # [degree]
 #      groundtruth_angle: 0.0 # [degree]
+#  resources:
+#    - topic: /testing/Resources
+#      groundtruth: 50.0
+#      groundtruth_epsilon: 25.0
