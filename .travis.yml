@@ -1,0 +1,29 @@
+sudo: required
+dist: trusty
+# Force travis to use its minimal image with default Python settings
+language: generic
+compiler:
+  - gcc
+
+env:
+  global:
+    - CATKIN_WS=~/catkin_ws
+    - CATKIN_WS_SRC=${CATKIN_WS}/src
+    - CATKIN_WS_UNDERLAY=~/catkin_ws_underlay
+    - CATKIN_WS_UNDERLAY_SRC=${CATKIN_WS_UNDERLAY}/src
+    - CI_ROS_DISTRO="kinetic"
+    - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
+  matrix:
+    - CATKIN_ENABLE_TESTING=OFF
+    - CATKIN_ENABLE_TESTING=ON
+
+install:
+  - bash ${CI_ROS_DISTRO}/.travis.install.sh
+
+script:
+  - bash ${CI_ROS_DISTRO}/.travis.script.sh
+
+after_failure:
+  - cd $CATKIN_WS
+  - source devel/setup.bash > /dev/null 2>&1
+  - catkin_test_results --verbose
