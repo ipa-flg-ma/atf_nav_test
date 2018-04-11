@@ -15,7 +15,7 @@ speed_factor_analysis: 10.0                                         # Factor to 
 
 time_limit_recording: 180.0                                          # Time limit in seconds for recording
 time_limit_analysing: 180.0                                          # Time limit in seconds for analysing
-time_limit_merging: 60.0
+time_limit_merging:   60.0
 time_limit_uploading: 10.0                                          # Time limit in seconds for uploading
 
 upload_data: false
