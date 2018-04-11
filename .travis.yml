@@ -24,10 +24,6 @@ install:
   - bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.install.sh
 
 script:
-  - tree -L 2
-  - echo '=========================================================='
-  - tree
-  - echo '=========================================================='
   - bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
 
 after_failure:
