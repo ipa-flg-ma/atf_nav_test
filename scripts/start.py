@@ -4,7 +4,7 @@
 Created on April 3, 2018
 
 @author: flg-ma
-@attention: Auto Testcases using ATF
+@attention: start auto testcases using ATF
 @contact: albus.marcel@gmail.com (Marcel Albus)
 @version: 1.0.0
 

@@ -6,12 +6,13 @@ Created on April 3, 2018
 @author: flg-ma
 @attention: compare the output results of the ATF tests
 @contact: albus.marcel@gmail.com (Marcel Albus)
-@version: 1.0.0
+@version: 1.1.0
 
 
 #############################################################################################
 
 History:
+- v1.1.0: write "average values" and "standard deviation" to "average.txt" file
 - v1.0.0: first push
 """
 
