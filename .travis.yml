@@ -11,6 +11,8 @@ env:
     - CATKIN_WS_SRC=${CATKIN_WS}/src
     - CATKIN_WS_UNDERLAY=~/catkin_ws_underlay
     - CATKIN_WS_UNDERLAY_SRC=${CATKIN_WS_UNDERLAY}/src
+    - ATF_WS=~/atf
+    - ATF_WS_SRC=~/${ATF_WS}/src
     - CI_ROS_DISTRO="kinetic"
     - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
   matrix:
@@ -18,10 +20,10 @@ env:
     - CATKIN_ENABLE_TESTING=ON
 
 install:
-  - bash ${CI_ROS_DISTRO}/.travis.install.sh
+  - bash ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.install.sh
 
 script:
-  - bash ${CI_ROS_DISTRO}/.travis.script.sh
+  - bash ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
 
 after_failure:
   - cd $CATKIN_WS
