@@ -7,7 +7,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 sudo apt-get update -qq > /dev/null 2>&1
 sudo apt-get install -qq -y python-rosdep python-wstool > /dev/null 2>&1
-sudo apt-get install -qq -y ros-${CI_ROS_DISTRO}-ros-base > /dev/null 2>&1 #needed as long as https://github.com/ros-infrastructure/rosdep/issues/430 is not fixed
+sudo apt-get install -qq -y ros-$CI_ROS_DISTRO-ros-base > /dev/null 2>&1 #needed as long as https://github.com/ros-infrastructure/rosdep/issues/430 is not fixed
 sudo rosdep init
 rosdep update
 
