@@ -7,7 +7,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 sudo apt-get update # > /dev/null 2>&1
 sudo apt-get install -y python-rosdep python-wstool # > /dev/null 2>&1
-sudo apt-get install -y ros-$CI_ROS_DISTRO-ros-base # > /dev/null 2>&1
+sudo apt-get install -y ros-$CI_ROS_DISTRO-desktop-full # > /dev/null 2>&1
 sudo rosdep init
 rosdep update
 
