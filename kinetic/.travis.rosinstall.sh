@@ -14,6 +14,8 @@ rosdep update
 source /opt/ros/$CI_ROS_DISTRO/setup.bash # > /dev/null 2>&1 # source release
 # create empty ATF workspace
 mkdir -p $ATF_WS_SRC
+ls
+tree -L 2
 catkin_init_workspace $ATF_WS_SRC
 cd $ATF_WS
 catkin_make -DCMAKE_BUILD_TYPE=Release # build empty ATF devel space
