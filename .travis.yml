@@ -23,10 +23,13 @@ before_install:
   - sudo apt-get install tree
 
 install:
-  - bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.install.sh
+  - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.rosinstall.sh
+  - bash .travis.rosinstall.sh
 
 script:
-  - bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
+  - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.script.sh
+  #- bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
+  - bash .travis.script.sh
 
 after_failure:
   - cd $CATKIN_WS
