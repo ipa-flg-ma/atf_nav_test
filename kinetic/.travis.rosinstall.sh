@@ -1,6 +1,11 @@
 set -e
 set -v
 
+tree -L 2
+echo '=========================================================='
+tree
+echo '=========================================================='
+
 while true; do echo "INSTALL IS RUNNING" && sleep 60; done&
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -10,6 +15,11 @@ sudo apt-get install -y python-rosdep python-wstool > /dev/null 2>&1
 sudo apt-get install -y ros-$CI_ROS_DISTRO-ros-base > /dev/null 2>&1
 sudo rosdep init
 rosdep update
+
+tree -L 2
+echo '=========================================================='
+tree
+echo '=========================================================='
 
 source /opt/ros/$CI_ROS_DISTRO/setup.bash # > /dev/null 2>&1 # source release
 # create empty ATF workspace
