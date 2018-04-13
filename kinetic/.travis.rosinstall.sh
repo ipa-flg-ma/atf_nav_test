@@ -20,6 +20,8 @@ source /opt/ros/$CI_ROS_DISTRO/setup.bash # > /dev/null 2>&1 # source release
 # create empty ATF workspace
 mkdir -p $ATF_WS_SRC
 echo '=========================================================='
+ls
+echo '=========================================================='
 pwd
 cd ~
 pwd
