@@ -15,9 +15,9 @@ env:
     - ATF_WS_SRC=${ATF_WS}/src
     - CI_ROS_DISTRO=kinetic
     - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
-  matrix:
-    - CATKIN_ENABLE_TESTING=OFF
-    - CATKIN_ENABLE_TESTING=ON
+#  matrix:
+#    - CATKIN_ENABLE_TESTING=OFF
+#    - CATKIN_ENABLE_TESTING=ON
 
 before_install:
   - sudo apt-get install tree

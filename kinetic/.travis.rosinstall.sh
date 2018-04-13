@@ -21,7 +21,8 @@ catkin_make -DCMAKE_BUILD_TYPE=Release # build empty ATF devel space
 catkin_make -DCMAKE_BUILD_TYPE=Release install # build empty ATF install space
 cd $ATF_WS_SRC
 # clone ATF to src/
-git clone git@github.com:ipa-flg-ma/atf.git
+#git clone git@github.com:ipa-flg-ma/atf.git
+git clone https://github.com/ipa-flg-ma/atf.git
 cd $ATF_WS
 # populate ATF
 if [ -f src/.travis.rosinstall ]; then wstool init -j10 $ATF_WS_SRC/.travis.rosinstall; fi
