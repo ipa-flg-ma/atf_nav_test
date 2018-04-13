@@ -28,7 +28,7 @@ import getpass
 class CompareResults:
     def __init__(self, filepath=None):
         print tc.OKBLUE + '=' * 100 + tc.ENDC
-        print tc.OKBLUE + '=' * 42 + ' Compare Results ' + '=' * 41 + tc.ENDC
+        print tc.OKBLUE + '=' * 42 + ' Compare Average ' + '=' * 41 + tc.ENDC
         print tc.OKBLUE + '=' * 100 + tc.ENDC
         try:
             if filepath is None:
