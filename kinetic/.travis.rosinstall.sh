@@ -11,26 +11,9 @@ sudo apt-get install -qq -y ros-$CI_ROS_DISTRO-ros-base > /dev/null 2>&1
 sudo rosdep init
 rosdep update
 
-tree -L 2
-echo '=========================================================='
-pwd
-echo '=========================================================='
-
 source /opt/ros/$CI_ROS_DISTRO/setup.bash # > /dev/null 2>&1 # source release
 # create empty ATF workspace
 mkdir -p $ATF_WS_SRC
-echo '=========================================================='
-ls
-echo '=========================================================='
-pwd
-cd ~
-pwd
-echo '=========================================================='
-cd $ATF_WS_SRC
-pwd
-ls
-echo '=========================================================='
-
 
 catkin_init_workspace $ATF_WS_SRC
 cd $ATF_WS
