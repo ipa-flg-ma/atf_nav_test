@@ -1,31 +1,30 @@
 set -e
 set -v
 
-tree -L 2
-echo '=========================================================='
-tree
-echo '=========================================================='
-
 while true; do echo "INSTALL IS RUNNING" && sleep 60; done&
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 sudo apt-get update > /dev/null 2>&1
-sudo apt-get install -y python-rosdep python-wstool > /dev/null 2>&1
-sudo apt-get install -y ros-$CI_ROS_DISTRO-ros-base > /dev/null 2>&1
+sudo apt-get install -qq -y python-rosdep python-wstool > /dev/null 2>&1
+sudo apt-get install -qq -y ros-$CI_ROS_DISTRO-ros-base > /dev/null 2>&1
 sudo rosdep init
 rosdep update
 
 tree -L 2
 echo '=========================================================='
-tree
+pwd
 echo '=========================================================='
 
 source /opt/ros/$CI_ROS_DISTRO/setup.bash # > /dev/null 2>&1 # source release
 # create empty ATF workspace
 mkdir -p $ATF_WS_SRC
-ls
-tree -L 2
+echo '=========================================================='
+pwd
+cd ~
+pwd
+echo '=========================================================='
+
 catkin_init_workspace $ATF_WS_SRC
 cd $ATF_WS
 catkin_make -DCMAKE_BUILD_TYPE=Release # build empty ATF devel space
