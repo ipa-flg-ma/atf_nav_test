@@ -12,7 +12,7 @@ env:
     - CATKIN_WS_UNDERLAY=~/catkin_ws_underlay
     - CATKIN_WS_UNDERLAY_SRC=${CATKIN_WS_UNDERLAY}/src
     - ATF_WS=~/atf
-    - ATF_WS_SRC=~/${ATF_WS}/src
+    - ATF_WS_SRC=${ATF_WS}/src
     - CI_ROS_DISTRO=kinetic
     - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
   matrix:
