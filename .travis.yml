@@ -25,8 +25,10 @@ before_install:
 install:
   - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.rosinstall.sh
   - bash .travis.rosinstall.sh
+  - git clone https://github.com/ros-industrial/industrial_ci.git .ci_config
 
 script:
+  - .ci_config/travis.sh
   - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.script.sh
   #- bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
   - bash .travis.script.sh
