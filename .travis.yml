@@ -15,6 +15,7 @@ env:
     - ATF_WS_SRC=${ATF_WS}/src
     - CI_ROS_DISTRO=kinetic
     - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
+    - ROS_DISTRO="kinetic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
 #  matrix:
 #    - CATKIN_ENABLE_TESTING=OFF
 #    - CATKIN_ENABLE_TESTING=ON
