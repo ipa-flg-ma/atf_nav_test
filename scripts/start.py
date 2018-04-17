@@ -6,11 +6,12 @@ Created on April 3, 2018
 @author: flg-ma
 @attention: start auto testcases using ATF
 @contact: albus.marcel@gmail.com (Marcel Albus)
-@version: 1.0.0
+@version: 1.1.0
 
 #############################################################################################
 
 History:
+- v1.1.0: update 'metric_yaml_output_directory' to specific testcase output directory
 - v1.0.0: first init
 """
 
@@ -54,7 +55,7 @@ class StartTestcases:
         :filepath: path where the generated '.yaml' files should be saved
         :return: --
         '''
-        metric_yaml_output_directory = '/tmp/atf_nav_test/'
+        metric_yaml_output_directory = '/tmp/atf_' + testcase + '/'
         # copy the generated output yaml files from the metrics in the data folder
         dir_util.copy_tree(src=metric_yaml_output_directory, dst=filepath)
         # copy the 'move_base_eband_params.yaml' file in the data folder
