@@ -1,4 +1,8 @@
 - git:
+    uri: git@gitlab.cc-asp.fraunhofer.de:flg-ma/ipa_navigation_tests.git
+    local-name: ipa_navigation_tests
+    version: master
+- git:
     uri: git@github.com:ipa320/cob_command_tools.git
     local-name: cob_command_tools
     version: indigo_dev
