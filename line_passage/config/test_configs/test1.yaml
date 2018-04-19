@@ -1,6 +1,6 @@
 testblock_nav:
   time:
-    - groundtruth: 14.0
+    - groundtruth: 12.5
       groundtruth_epsilon: 1.0
   goal:
     - topic: /move_base/goal
@@ -9,11 +9,19 @@ testblock_nav:
   jerk:
     - topic: /base/odometry_controller/odometry
       groundtruth: 0.0
-      groundtruth_epsilon: 4.0
+      groundtruth_epsilon: 5.0
   path_length:
     - root_frame: /map
-      measured_frame: /base_link
+      measured_frame: /base_footprint
       groundtruth: 5.5
       groundtruth_epsilon: 0.3
+#  publish_rate: 
+#    - topic: /clock
+#      groundtruth: 20.0
+#      groundtruth_epsilon: 5.0
 #      groundtruth_angle_epsilon: 20.0 # [degree]
 #      groundtruth_angle: 0.0 # [degree]
+#  resources:
+#    - topic: /testing/Resources
+#      groundtruth: 50.0
+#      groundtruth_epsilon: 25.0

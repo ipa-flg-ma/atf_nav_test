@@ -4,6 +4,10 @@ goal:                                          # Topics for the metric 'goal'
     - "/base_pose_ground_truth"
     - "/base/odometry_controller/odometry"
     - "/tf"
+# publish_rate:
+#   topics:
+#     - "/base/odometry_controller/odometry"
+#     - "/clock"
 wait_for_topics: [/move_base/status]                 # Names of the topics to wait for before beginning the test
 wait_for_services: []                                 # Names of the services to wait for before beginning the test
 additional_parameters: []                             # Name and value of additional parameter which will be included in every recording test file

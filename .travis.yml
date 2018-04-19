@@ -1,0 +1,40 @@
+sudo: required
+dist: xenial
+# Force travis to use its minimal image with default Python settings
+language: generic
+compiler:
+  - gcc
+
+env:
+  global:
+    - CATKIN_WS=~/catkin_ws
+    - CATKIN_WS_SRC=${CATKIN_WS}/src
+    - CATKIN_WS_UNDERLAY=~/catkin_ws_underlay
+    - CATKIN_WS_UNDERLAY_SRC=${CATKIN_WS_UNDERLAY}/src
+    - ATF_WS=~/atf
+    - ATF_WS_SRC=${ATF_WS}/src
+    - CI_ROS_DISTRO=kinetic
+    - DEFAULT_ROSINSTALL="kinetic/.travis.install.sh"
+    - ROS_DISTRO="kinetic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
+#  matrix:
+#    - CATKIN_ENABLE_TESTING=OFF
+#    - CATKIN_ENABLE_TESTING=ON
+
+before_install:
+  - sudo apt-get install tree
+
+install:
+  - git clone https://github.com/ros-industrial/industrial_ci.git .ci_config
+  - .ci_config/travis.sh
+  - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.rosinstall.sh
+  - bash .travis.rosinstall.sh
+
+script:
+  - wget https://raw.githubusercontent.com/ipa-flg-ma/atf_nav_pkgs/ipa/kinetic/.travis.script.sh
+  #- bash ~/ipa-flg-ma/atf_nav_pkgs/${CI_ROS_DISTRO}/.travis.script.sh
+  - bash .travis.script.sh
+
+after_failure:
+  - cd $CATKIN_WS
+  - source devel/setup.bash > /dev/null 2>&1
+  - catkin_test_results --verbose
