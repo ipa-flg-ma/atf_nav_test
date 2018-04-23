@@ -4,7 +4,7 @@
 Created on Apr 11, 2018
 
 @author: flg-ma
-@attention: beatiful outputs for travis CI
+@attention: beautiful outputs for travis CI
 @contact: albus.marcel@gmail.com (Marcel Albus)
 @version: 1.0.0
 
@@ -41,7 +41,7 @@ class CIOutput:
                         'time']
         pass
 
-    def color_string(self, string_text, color='test'):
+    def color_string(self, string_text, color='normal'):
         '''
         function to print colorful text to terminal commands surrounded by lines of hashtags
         string_text:
