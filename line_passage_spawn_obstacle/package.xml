@@ -17,6 +17,14 @@
     <depend>rospy</depend>
     <depend>rostopic</depend>
 
+    <depend>cob_command_tools</depend>
+    <depend>cob_common</depend>
+    <depend>cob_environments</depend>
+    <depend>cob_navigation</depend>
+    <depend>cob_robots</depend>
+    <depend>cob_simulation</depend>
+    <depend>cob_supported_robots</depend>
+
     <test_depend>rostest</test_depend>
 
 </package>
