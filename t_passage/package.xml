@@ -4,9 +4,9 @@
     <version>0.1.0</version>
     <description>ATF app for testing navigation.</description>
 
-    <maintainer email="florian.weisshardt@ipa.fraunhofer.de">Florian Weisshardt</maintainer>
+    <maintainer email="marcel.albus@ipa.fraunhofer.de">Marcel Albus</maintainer>
 
-    <author email="florian.weisshardt@ipa.fraunhofer.de">Florian Weisshardt</author>
+    <author email="marcel.albus@ipa.fraunhofer.de">Marcel Albus</author>
 
     <license>Apache 2.0</license>
 
