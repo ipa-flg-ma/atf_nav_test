@@ -4,14 +4,15 @@
 Created on April 3, 2018
 
 @author: flg-ma
-@attention: compare the output results of the ATF tests
+@attention: compare the output results of a complete ATF test folder
 @contact: albus.marcel@gmail.com (Marcel Albus)
-@version: 1.1.0
+@version: 1.1.1
 
 
 #############################################################################################
 
 History:
+- v1.1.1: rename from 'compare' to 'compare_folder'
 - v1.1.0: write "average values" and "standard deviation" to "average.txt" file
 - v1.0.0: first push
 """
