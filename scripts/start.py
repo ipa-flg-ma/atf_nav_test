@@ -6,14 +6,20 @@ Created on April 3, 2018
 @author: flg-ma
 @attention: start auto testcases using ATF
 @contact: albus.marcel@gmail.com (Marcel Albus)
-@version: 1.1.0
+@version: 1.2.0
 
 #############################################################################################
 
 History:
+- v1.2.0: delete "glob" and "bcolors" import --> create class TerminalColors
 - v1.1.0: update 'metric_yaml_output_directory' to specific testcase output directory
 - v1.0.0: first init
 """
+
+import unittest
+import rostest
+import rospy
+import sys
 
 import os
 import shutil
@@ -21,9 +27,22 @@ import rospkg
 import argparse
 from distutils import dir_util
 import time
-import glob
 import getpass
-from bcolors import TerminalColors as tc
+
+
+# colors in terminal outputs
+class TerminalColors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
+tc = TerminalColors()
 
 
 class StartTestcases:
@@ -36,8 +55,6 @@ class StartTestcases:
                           't_passage',  # 5
                           't_passage_obstacle']  # 6
         self.rospack = rospkg.RosPack()  # get path for ROS package
-        # get username go include in path
-        self.atf_yaml_generated_pth = '/home/' + getpass.getuser() + '/git/atf_nav_test_config/scripts/yaml_files'
         self.args = self.build_parser().parse_args()
         self.timeformat = "%Y_%m_%d"
         self.move_base_eband_param_path = self.rospack.get_path(
@@ -121,7 +138,20 @@ class StartTestcases:
         print '=' * 80
 
 
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.st = StartTestcases()
+
+    def tearDown(self):
+        pass
+
+    def test_Recording(self):
+        self.st.main()
+
+
 if __name__ == '__main__':
     st = StartTestcases()
     st.main()
-pass
+    if "rostest" == sys.argv[1]:
+        PKG = 'ipa_test_bringup'
+        rostest.rosrun(PKG, 'recording', Test, sysargs=None)
